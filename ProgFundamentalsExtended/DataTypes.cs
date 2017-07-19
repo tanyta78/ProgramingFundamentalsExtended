@@ -1,16 +1,12 @@
 ﻿namespace ProgFundamentalsExtended
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
     using System.Globalization;
-    using System.Text;
-    using System.Threading.Tasks;
+    using System.Linq;
 
-
-   public class DataTypes
+    public class DataTypes
     {
-       private static void Main()
+        private static void Main()
         {
             //number of strings
             int n = int.Parse(Console.ReadLine());
@@ -52,9 +48,7 @@
             }
 
             Console.WriteLine(result);
-
         }
-
 
         public void PracticeIntegerNumbers()
         {
@@ -124,7 +118,6 @@
 
                 if (number == 0)
 
-
                     overflows++;
             }
             Console.WriteLine(number);
@@ -133,7 +126,6 @@
             {
                 Console.WriteLine("Overflowed " + overflows + " times");
             }
-
         }
 
         public void TerabytesToBytes()
@@ -148,7 +140,6 @@
             decimal lightYears = decimal.Parse(Console.ReadLine());
 
             decimal total = (9450000000000M / 300000M) * lightYears;
-
 
             TimeSpan diff = TimeSpan.FromSeconds((double)total);
             string formatted = string.Format(
@@ -184,7 +175,6 @@
                 else if (sideC * sideC + sideB * sideB == sideA * sideA)
                 {
                     Console.WriteLine("Triangle has a right angle between sides b and c");
-
                 }
                 else if (sideC * sideC + sideA * sideA == sideB * sideB)
                 {
@@ -247,9 +237,6 @@
             Console.WriteLine("bigger type: {0}", biggerType);
             Console.WriteLine("smaller type: {0}", smallerType);
             Console.WriteLine("{0} can overflow {1} {2} times", biggerNumber, smallerType, result);
-
-
-
         }
 
         public void VariableInHexadecimal()
@@ -283,7 +270,6 @@
                     Console.WriteLine("8"); break;
                 case "nine":
                     Console.WriteLine("9"); break;
-
             }
         }
 
@@ -312,12 +298,9 @@
                 case "+": result = firstOperand + secondOperand; break;
                 case "-": result = firstOperand - secondOperand; break;
                 case "/": result = (double)(firstOperand / secondOperand); break;
-
             }
 
             Console.WriteLine("{0} {1} {2} = {3}", firstOperand, sign, secondOperand, result);
-
-
         }
 
         public void TrickyStrings()
@@ -340,7 +323,6 @@
 
         public void CypherRoulette()
         {
-            
         }
     }
 }

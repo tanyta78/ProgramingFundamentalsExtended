@@ -1,12 +1,9 @@
 ﻿namespace ProgFundExtArraysMore
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    class MoreArrays
+    internal class MoreArrays
     {
         public static void Main()
         {
@@ -17,7 +14,6 @@
             int numberPlants = powerPlants.Length;
             int season = 0;
             bool allDead = false;
-
         }
 
         public static void CharRotation()
@@ -75,7 +71,6 @@
 
         private static void SendMessage(string[] commandInfo, string[] phones, string[] names)
         {
-
             string toSum = commandInfo[1];
             if (names.Contains(commandInfo[1]))
             {
@@ -108,7 +103,6 @@
 
         private static void MakeCall(string[] commandInfo, string[] phones, string[] names)
         {
-
             string toSum = commandInfo[1];
             if (names.Contains(commandInfo[1]))
             {
@@ -174,7 +168,6 @@
                         Console.Write(" ");
                     }
                 }
-
             }
         }
 

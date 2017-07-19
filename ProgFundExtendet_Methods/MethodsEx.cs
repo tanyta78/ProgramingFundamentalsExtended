@@ -1,10 +1,6 @@
 ﻿namespace ProgFundExtendet_Methods
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class MethodsEx
     {
@@ -13,7 +9,6 @@
             StringEncryption();
         }
 
-        
         public static void StringEncryption()
         {
             int numberOfChar = int.Parse(Console.ReadLine());
@@ -79,10 +74,10 @@
                 secondDigit = currentNumber.ToString()[2];
                 thirdDigit = currentNumber.ToString()[3];
             }
-           
+
             switch (firstDigit)
             {
-                case '1':Console.Write("one-hundred");break;
+                case '1': Console.Write("one-hundred"); break;
                 case '2': Console.Write("two-hundred"); break;
                 case '3': Console.Write("three-hundred"); break;
                 case '4': Console.Write("four-hundred"); break;
@@ -110,6 +105,7 @@
                         case '9': Console.Write(" and nineteen"); break;
                     }
                     break;
+
                 case '2': Console.Write(" and twenty"); break;
                 case '3': Console.Write(" and thirty"); break;
                 case '4': Console.Write(" and fourty"); break;
@@ -119,7 +115,7 @@
                 case '8': Console.Write(" and eighty"); break;
                 case '9': Console.Write(" and ninety"); break;
             }
-            if (!secondDigit.Equals('1') )
+            if (!secondDigit.Equals('1'))
             {
                 if (secondDigit.Equals('0') && !thirdDigit.Equals('0'))
                 {
@@ -140,7 +136,6 @@
                 }
             }
             Console.WriteLine();
-
         }
 
         public static void Notification()
@@ -184,7 +179,6 @@
             Console.WriteLine("Successfully executed {0}.", operation);
             Console.WriteLine("==============================");
             Console.WriteLine("Message: {0}.", message);
-
         }
 
         public static void ConvertIntToBase()
@@ -239,7 +233,6 @@
             return repeatedString;
         }
 
-
         public static void HelloName()
         {
             string name = Console.ReadLine();
@@ -253,6 +246,7 @@
             double c = double.Parse(Console.ReadLine());
             GetMin(a, b, c);
         }
+
         private static void GetMin(double d, double d1, double d2)
         {
             Console.WriteLine(Math.Min(d, Math.Min(d1, d2)));

@@ -1,10 +1,7 @@
 ﻿namespace ProgFundExtended_SimpleArrays
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class SimpleArrays
     {
@@ -30,12 +27,15 @@
                         case "up":
                             positionY += int.Parse(commands[i]);
                             break;
+
                         case "down":
                             positionY -= int.Parse(commands[i]);
                             break;
+
                         case "right":
                             positionX += int.Parse(commands[i]);
                             break;
+
                         case "left":
                             positionX -= int.Parse(commands[i]);
                             break;
@@ -43,9 +43,9 @@
                 }
             }
 
-            Console.WriteLine("firing at [{0}, {1}]",positionX,positionY);
+            Console.WriteLine("firing at [{0}, {1}]", positionX, positionY);
 
-            if (positionY==coordinates[1]&&positionX==coordinates[0])
+            if (positionY == coordinates[1] && positionX == coordinates[0])
             {
                 Console.WriteLine("got 'em!");
             }
@@ -67,7 +67,6 @@
             {
                 Console.WriteLine("crashed");
                 isCrushed = true;
-
             }
             else
             {
@@ -98,9 +97,7 @@
             {
                 Console.WriteLine("got through safely. current altitude: {0}m", altitude);
             }
-
         }
-
 
         public static void ArraySymmetrySecond()
         {
@@ -156,7 +153,6 @@
                 {
                     countCapitalLetters++;
                 }
-
             }
             Console.WriteLine(countCapitalLetters);
         }
